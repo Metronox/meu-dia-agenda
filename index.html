@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Meu Dia</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="mut sm" id="sub"></div>
+      <h1 id="ttl"></h1>
+      <div id="prog"></div>
+      <div id="en"></div>
+      <div id="main"></div>
+    </div>
+    <nav></nav>
+    <div id="toast"><span id="tmsg"></span><button class="btn" data-a="okT">Ok</button></div>
+    <div id="alarm">
+      <div style="font-weight: 700">Chegou a hora</div>
+      <div class="t" id="at"></div>
+      <div class="sm" id="ah"></div>
+      <div id="lock" style="margin-top: 18px">
+        <div class="sm">Para silenciar, digite este código:</div>
+        <div id="code" style="font-size: 56px; font-weight: 800; letter-spacing: 0.25em"></div>
+        <input
+          id="ci"
+          inputmode="numeric"
+          maxlength="4"
+          autocomplete="off"
+          placeholder="----"
+          aria-label="Código"
+        />
+        <div id="cerr" class="sm" style="margin-top: 8px"></div>
+      </div>
+      <div id="opts" style="display: none; width: 100%; max-width: 340px">
+        <button class="btn" style="background: #fff; color: #0a0f1e" data-a="start">
+          Comecei agora
+        </button>
+        <button class="btn sec" data-a="snooze">Me lembre em 5 minutos</button>
+        <button class="btn sec" data-a="skip">Não vou conseguir fazer</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
